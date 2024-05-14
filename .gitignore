@@ -7,5 +7,5 @@ notes.txt
 #smlwebs/static/
 venv/
 .vscode/
-.media/images/
-.mysite/static/images/
+# .media/images/
+# .mysite/static/images/
