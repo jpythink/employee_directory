@@ -11,5 +11,10 @@ from .models import Employee
 
 def employee_details(request, pk):
     employee = get_object_or_404(Employee, pk=pk)
-    print(employee)
-    return HttpResponse(employee)
+    # print(employee)
+    # return HttpResponse(employee)
+
+    context = {
+        'employee': employee
+    }
+    return render(request, "employee_details.html", context)
